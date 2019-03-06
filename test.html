@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>作业1</title>
+	</head>
+	<!--
+		4行6列: 有4行，每行有6个单元格
+		
+		cellpadding: 调整内容的位置
+		align: 水平对齐方式(left/center/right)
+			table: 整个表格水平方向位置
+			tr: 对应整一行的对齐方式
+			td: 对应单元格的对齐方式
+		valign: 垂直方向(只能用于tr/td，top/middle/bottom)
+		bordercolor: 边框颜色
+	-->
+	
+	
+	<body>
+		<form name="text" method="get" action="baidu.com">
+			<table width="300" height="200" border="1" cellspacing="0"
+			 align="center" bordercolor="black">
+				<tr align="center">
+					<td rowspan="4">总体信息</td>
+					<td colspan="4">用户注册</td>
+					<!--
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					-->
+				</tr>
+			
+			
+				<tr align="center">
+					
+					<td colspan="2" align="right">用户名：</td>
+					
+					<td colspan="2" > <input type="text" placeholder="用户名称" /> </td>
+					
+				</tr>
+			
+			
+				<tr align="center">
+					
+					<td colspan="2" align="right" >密码：</td>
+					
+					<td colspan="2"> <input type="password" placeholder="请输入六位密码"/> </td>
+				</tr>
+		
+		
+				<tr align="center">
+					
+					<td colspan="4"> <input type="submit" value="提交" /> <input type="reset" value="重置"  /> </td>
+			
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
